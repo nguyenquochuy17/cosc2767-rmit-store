@@ -1,0 +1,8 @@
+- hosts: ansibleserver
+  tasks:
+    - name: create docker image
+      command: docker build -t mariadb-test-a3:latest ./cosc2767-rmit-store/sql-scripts/
+    - name: create tag to push the image to dockerhub
+      command: docker tag mariadb-test-a3:latest quochuynguyen/mariadb-test-a3:latest
+    - name: push the docker image to dockerhub
+      command: docker push quochuynguyen/mariadb-test-a3:latest

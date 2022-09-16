@@ -1,0 +1,8 @@
+- hosts: ansibleserver
+  tasks:
+    - name: create docker image
+      command: docker build -t apache-test-a3:latest ./cosc2767-rmit-store
+    - name: create tag to push the image to dockerhub
+      command: docker tag apache-test-a3:latest quochuynguyen/apache-test-a3:latest
+    - name: push the docker image to dockerhub
+      command: docker push quochuynguyen/apache-test-a3:latest
