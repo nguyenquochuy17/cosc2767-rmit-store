@@ -1,5 +1,7 @@
 - hosts: ansibleserver
   tasks:
+    - name: start docker
+      command: sudo service docker start
     - name: create docker image
       command: docker build -t apache-a3:latest ./cosc2767-rmit-store
     - name: create tag to push the image to dockerhub

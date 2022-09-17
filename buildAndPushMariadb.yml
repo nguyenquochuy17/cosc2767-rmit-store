@@ -1,5 +1,7 @@
 - hosts: ansibleserver
   tasks:
+    - name: start docker
+      command: sudo service docker start
     - name: create docker image
       command: docker build -t mariadb-a3:latest ./cosc2767-rmit-store/sql-scripts/
     - name: create tag to push the image to dockerhub
