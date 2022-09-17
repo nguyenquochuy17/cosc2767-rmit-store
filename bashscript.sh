@@ -9,4 +9,3 @@ ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullApacheToCreateContai
 
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullApacheProd.yml
 
-sudo python /home/ansibleadmin/html/cosc2767-rmit-store/test-ui.py
