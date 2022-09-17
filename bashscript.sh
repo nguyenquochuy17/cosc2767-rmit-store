@@ -7,7 +7,6 @@ ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/buildAndPushApache.yml
 sleep 10
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullApacheToCreateContainer.yml
 
-# copy the testing python script
-# sudo python /var/www/html/cosc2767-rmit-store/test-ui.py
-
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullApacheProd.yml
+
+sudo python /home/ansibleadmin/html/cosc2767-rmit-store/test-ui.py
