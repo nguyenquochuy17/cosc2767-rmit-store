@@ -1,7 +1,7 @@
 - hosts: apacheserver
   tasks:
     - name: start docker
-      command: service docker start
+      command: sudo service docker start
     - name: stop the existing container
       command: docker stop apache-container
       ignore_errors: yes
