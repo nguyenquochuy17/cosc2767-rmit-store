@@ -9,7 +9,7 @@
       command: docker rm apache-container
       ignore_errors: yes
     - name: remove the existing image
-      command: docker rmi quochuynguyen/apache-a3-dev:latest
+      command: docker rmi quochuynguyen/apache-a3:latest
       ignore_errors: yes
     - name: create docker container by using the image on Dockerhub
-      command: docker run -d --name apache-container -e DBHOST='35.169.29.222' -p 80:80 quochuynguyen/apache-a3-dev:latest
+      command: docker run -d --name apache-container -e DBHOST='35.169.29.222' -p 80:80 quochuynguyen/apache-a3:latest

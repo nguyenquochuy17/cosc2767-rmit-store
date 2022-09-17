@@ -9,7 +9,7 @@
       command: docker rm mariadb-container
       ignore_errors: yes
     - name: remove the existing image
-      command: docker rmi quochuynguyen/mariadb-a3-dev:latest
+      command: docker rmi quochuynguyen/mariadb-a3:latest
       ignore_errors: yes
     - name: create docker container by using the image on Dockerhub
-      command: docker run -d --name mariadb-container -p 3306:3306 quochuynguyen/mariadb-a3-dev:latest
+      command: docker run -d --name mariadb-container -p 3306:3306 quochuynguyen/mariadb-a3:latest
