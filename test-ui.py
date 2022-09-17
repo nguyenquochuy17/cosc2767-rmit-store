@@ -28,6 +28,6 @@ except NoSuchElementException:
     print('Successfully, Database connection error not occur. Proceed to deploy the website to Production Server at 54.208.129.197.')
     pass
     print('--------------------------------------')
-    print('Test Completed at: ' + datetime.datetime.now())
+    print(f'Test Completed at: {datetime.datetime.now()}')
     driver.close()
     driver.quit()
