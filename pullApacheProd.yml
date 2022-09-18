@@ -6,10 +6,10 @@
       command: docker stop $(docker ps -a -q)
       ignore_errors: yes
     - name: remove the existing container
-      command: docker rm $(docker ps -a -q)
+      command: docker rm -vf $(docker ps -aq)
       ignore_errors: yes
     - name: remove the existing image
-      command: docker rmi $(docker images -a -q)
+      command: docker rmi -f $(docker images -aq)
       ignore_errors: yes
     - name: create docker container by using the image on Dockerhub
       command: docker run -d --name apache-container -e DBHOST='52.23.70.92' -p 80:80 quochuynguyen/apache-a3:latest
