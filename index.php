@@ -91,7 +91,7 @@
               <?php
               $link = mysqli_connect(
                   getenv("DBHOST"),
-                  "db_admin1",
+                  "db_admin",
                   "rmit_password",
                   "rmit_store_db"
               );
