@@ -1,8 +1,8 @@
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/buildAndPushMariadb.yml
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/buildAndPushApache.yml
-sleep 10
+sleep 20
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullMariadbToCreateContainer.yml
-sleep 10 
+sleep 20 
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/pullApacheToCreateContainer.yml
 sleep 10
 python /home/ansibleadmin/cosc2767-rmit-store/test-ui.py
