@@ -3,8 +3,8 @@
     - name: start docker
       command: sudo service docker start
     - name: create docker image
-      command: docker build -t mariadb-a3:latest ./cosc2767-rmit-store/sql-scripts/
+      command: docker build -t mariadb-image-a3:latest ./cosc2767-rmit-store/sql-scripts/
     - name: create tag to push the image to dockerhub
-      command: docker tag mariadb-a3:latest quochuynguyen/mariadb-a3:latest
+      command: docker tag mariadb-image-a3:latest quochuynguyen/mariadb-image-a3:latest
     - name: push the docker image to dockerhub
-      command: docker push quochuynguyen/mariadb-a3:latest
+      command: docker push quochuynguyen/mariadb-image-a3:latest
