@@ -1,3 +1,14 @@
+# RMIT University Vietnam
+# Course: COSC2767 Systems Deployment and Operations
+# Semester: 2022B
+# Assessment: Assignment 3
+# Author: Nguyen Quoc Huy
+# ID: s3818764
+# Created  date: 18/09/2022 
+# Last modified: 18/09/2022
+# Acknowledgement: Google
+
+
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/buildAndPushMariadb.yml
 ansible-playbook /home/ansibleadmin/cosc2767-rmit-store/buildAndPushApache.yml
 sleep 20
